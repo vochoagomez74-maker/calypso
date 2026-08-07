@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@theme {
+  --color-cream: #f7f1e8;
+  --color-beige: #efe6d8;
+  --color-ink: #1c1b1f;
+  --color-gold: #b08d57;
+  --color-gold-light: #c9a876;
+}
+
+body {
+  background-color: var(--color-cream);
+  color: var(--color-ink);
+  font-family: 'Manrope', sans-serif;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.font-heading {
+  font-family: 'Cormorant Garamond', serif;
+}
