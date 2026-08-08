@@ -6,8 +6,8 @@ import { useState } from "react";
 function IconBuscar() {
   return (
     <svg
-      width="18"
-      height="18"
+      width="19"
+      height="19"
       viewBox="0 0 24 24"
       fill="none"
       stroke="currentColor"
@@ -22,15 +22,15 @@ function IconBuscar() {
 function IconCarrito() {
   return (
     <svg
-      width="18"
-      height="18"
+      width="19"
+      height="19"
       viewBox="0 0 24 24"
       fill="none"
       stroke="currentColor"
       strokeWidth="1.5"
     >
-      <path d="M6 7h12l1 13H5L6 7Z" />
-      <path d="M9 7a3 3 0 0 1 6 0" />
+      <path d="M5 8h14l-1 12H6L5 8Z" />
+      <path d="M9 8a3 3 0 0 1 6 0" />
     </svg>
   );
 }
@@ -53,7 +53,7 @@ export default function Header() {
           </span>
         </Link>
 
-        {/* NAVEGACIÓN */}
+        {/* MENU */}
         <nav className="hidden md:flex gap-8 text-sm tracking-wide uppercase font-heading">
           <Link
             href="/tienda"
@@ -87,6 +87,7 @@ export default function Header() {
         {/* ICONOS */}
         <div className="flex gap-5 items-center">
 
+          {/* BUSCAR */}
           <button
             aria-label="Buscar"
             onClick={() => setBusquedaAbierta(!busquedaAbierta)}
@@ -95,6 +96,7 @@ export default function Header() {
             <IconBuscar />
           </button>
 
+          {/* CARRITO */}
           <Link
             href="/carrito"
             aria-label="Carrito"
